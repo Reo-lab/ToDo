@@ -1,0 +1,32 @@
+# 共通
+.env
+.env.* # 環境別 .env.production なども除外
+
+# Docker
+*.pid
+*.log
+/tmp
+/vendor/
+node_modules/
+frontend/node_modules/
+backend/vendor/bundle
+
+# Rails (API)
+backend/config/master.key
+backend/config/credentials.yml.enc
+backend/log/*
+!backend/log/.keep
+backend/tmp/*
+!backend/tmp/.keep
+
+# React (Vite)
+frontend/dist
+frontend/.vite
+
+# OS/IDE
+.DS_Store
+*.swp
+*.swo
+*.bak
+.idea/
+.vscode/
